@@ -27,9 +27,9 @@ jobs:
     - name: Test
       run: dotnet test -c release --no-build --verbosity normal
   
-    - name: Stop example.com
-      run: appcmd stop sites "demo"
+    - name: Stop localhost:81
+      run: appcmd stop sites "localhost:81"
     - name: Publish Release
       run: dotnet publish demo --configuration Release -o C:\\inetpub\\wwwroot\\demo
     - name: Start demo
-      run: appcmd start sites "demo"  
+      run: appcmd start sites "localhost:81"  
