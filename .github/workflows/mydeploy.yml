@@ -16,7 +16,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Stop example.com
+    - name: Stop demo
       run: appcmd stop sites "demo"
     - name: Publish Release
       run: dotnet publish demo --configuration Release -o C:\wwwroot\demo
