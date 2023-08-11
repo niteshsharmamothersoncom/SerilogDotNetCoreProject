@@ -1,0 +1,2 @@
+# SerilogDotNetCoreProject
+SerilogDotNetCoreProject
