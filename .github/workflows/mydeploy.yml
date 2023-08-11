@@ -1,24 +1,27 @@
-name: My .NET Action
+name: .NETdep
 on:
   push:
-    branches: [ master ]
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 jobs:
   build:
-    runs-on: self-hosted    
-    defaults:
-      run:
-        shell: cmd
+    runs-on: self-hosted
     steps:
     - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal 
     - name: Stop demo
       run: appcmd stop sites "demo"
     - name: Publish Release
-      run: dotnet publish demo --configuration Release -o C:\wwwroot\demo
+      run: dotnet publish demo --configuration Release -o c:\\wwwroot\\demo
     - name: Start demo
       run: appcmd start sites "demo"
