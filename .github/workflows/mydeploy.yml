@@ -12,7 +12,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 7.0.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
@@ -22,6 +22,6 @@ jobs:
     - name: Stop demo
       run: appcmd stop sites "demo"
     - name: Publish Release
-      run: dotnet publish demo --configuration Release -o c:\\wwwroot\\demo
+      run: dotnet publish demo --configuration Release -o c:\wwwroot\demo
     - name: Start demo
       run: appcmd start sites "demo"
