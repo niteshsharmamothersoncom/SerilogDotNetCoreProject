@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Serilog\Serilog.csproj" />
+    <ProjectReference Include="..\Serilog\SerilogDemo.csproj" />
   </ItemGroup>
 
 </Project>

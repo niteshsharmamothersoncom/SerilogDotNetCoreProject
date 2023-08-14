@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serilog", "Serilog\Serilog\Serilog.csproj", "{568B8481-0DF0-4832-8667-3E2A5A228BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogDemo", "Serilog\Serilog\SerilogDemo.csproj", "{568B8481-0DF0-4832-8667-3E2A5A228BF7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject1", "Serilog\TestProject1\TestProject1.csproj", "{0DA8E238-2F7B-429E-8417-17BF137ACE6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions-runner", "actions-runner", "{3CD849D0-82BA-4A13-B922-DB4DE9A2B7AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
