@@ -16,6 +16,7 @@ try
     // Add services to the container.
     builder.Services.AddControllersWithViews();
     builder.Host.UseSerilog((context, configuration) => configuration.ReadFrom.Configuration(context.Configuration));
+   
 
     builder.Host.UseNLog();
 

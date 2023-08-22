@@ -7,6 +7,8 @@ namespace SerilogDemo
 {
     public static class LogClass
     {
-       
+        public static string GetMessage() {
+            return "";
+        }
     }
 }

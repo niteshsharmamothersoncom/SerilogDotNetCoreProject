@@ -7,7 +7,9 @@ namespace TestProject1
         [Fact]
         public void Test1()
         {
-            string str = "this is string";
+             string str = "this is string";
+           // SerilogDemo s = new SerilogDemo();
+           
             Assert.Equal(str, str);
             Assert.True(true);
         }
