@@ -1,6 +1,6 @@
 using SerilogDemo.Controllers;
 
-namespace TestProject1
+namespace XUnitTestProject
 {
     public class UnitTest1
     {
@@ -8,8 +8,7 @@ namespace TestProject1
         public void Test1()
         {
              string str = "this is string";
-           // SerilogDemo s = new SerilogDemo();
-           
+          Console.Write (     SerilogDemo.LogClass.GetMessage());
             Assert.Equal(str, str);
             Assert.True(true);
         }
