@@ -6,9 +6,29 @@ namespace SerilogDemo.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-    
+        private readonly ILogger<HomeController> _logger=null;
 
+        public string GetEmployeeName(int empId)
+        {
+            string name;
+            if (empId == 1)
+            {
+                name = "Jignesh";
+            }
+            else if (empId == 2)
+            {
+                name = "Rakesh";
+            }
+            else
+            {
+                name = "Not Found";
+            }
+            return name;
+        }
+        public HomeController() {
+            //ILogger<HomeController> logger = this;
+            //_logger = logger; 
+        }
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;

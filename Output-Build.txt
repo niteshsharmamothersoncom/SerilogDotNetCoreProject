@@ -1,0 +1,6 @@
+﻿Clean started...
+1>------ Clean started: Project: NUnitTestProject, Configuration: Debug Any CPU ------
+2>------ Clean started: Project: XUnitTestProject, Configuration: Debug Any CPU ------
+3>------ Clean started: Project: SerilogDemo, Configuration: Debug Any CPU ------
+========== Clean: 3 succeeded, 0 failed, 0 skipped ==========
+========== Clean started at 12:42 PM and took 01.415 seconds ==========
